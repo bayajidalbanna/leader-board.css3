@@ -129,10 +129,20 @@ hr {
 -----------------*/
 
 /* Mobile Divices */
-@media only screen and (max-width; 767px) {
-    .players {
-        background-color: red;
-        grid-template-columns: 1, 1fr;
+@media only screen and (max-width; 688px) {
+    .container {
+        width: 100%;
+    }
 
+    .players,
+    .blogs,
+    .courses {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .player,
+    .blog,
+    .course {
+        flex-direction: column;
     }
 }
